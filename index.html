@@ -1,0 +1,39 @@
+<!doctype>
+
+<html>
+
+  <head>
+    <title>Gif-Gaf Rif-Raf!</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <div class="gg">
+      <h1 class="gg__title">Gif-Gaf Rif-Raf!</h1>
+
+      <h2>Top 20 Rated-G Gifs on Giphy</h2>
+
+      <button class="gg__button">Show me the gifs</button>
+    </div>
+
+    <div class="gg__lightbox gg__lightbox--hidden" role="dialog" aria-hidden=”true”>
+      <div class="gg__lightbox__content">
+        <div class="gg__lightbox__header">
+          <h3 class="gg__lightbox__title" data-lightbox-role="title"></h3>
+          <button class="gg__lightbox__close">Close</button>
+        </div>
+
+        <div class="gg__lightbox__image-container gg__lightbox__image-container--loading">
+          <img class="gg__lightbox__image-container__image" data-lightbox-role="image" src="" alt="" />
+        </div>
+        <span class="gg__lightbox__image-source" data-lightbox-role="image-source"></span>
+
+        <button class="gg__button gg__button--small" data-lightbox-role="page" data-lightbox-page-direction="previous" data-page-amount="-1">Previous</button>
+        <button class="gg__button gg__button--small" data-lightbox-role="pager" data-lightbox-page-direction="next" data-page-amount="1">Next</button>
+      </div>
+    </div>
+  </body>
+
+  <script src="js/gg/lightbox.js"></script>
+  <script src="js/gg-main.js"></script>
+</html>

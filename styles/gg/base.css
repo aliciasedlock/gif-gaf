@@ -1,0 +1,69 @@
+.gg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35vh;
+  max-width: 40em;
+  text-align: center;
+}
+
+.gg__title {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: titleColorShift;
+  color: #FFABAB;
+  font-size: 4em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
+}
+
+.gg__button {
+  background-color: #ABE4FF;
+  border: 0;
+  box-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 1.25em;
+  font-weight: 800;
+  max-width: 20em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-transform: uppercase;
+  transition: box-shadow .15s;
+  width: 100%;
+}
+
+.gg__button:hover {
+  box-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 2px 2px 0 #000;
+}
+
+.gg__button:focus {
+  outline: 0;
+}
+
+.gg__button--small {
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-left: .5em;
+  margin-right: .5em;
+  width: 8em;
+}
+
+@keyframes titleColorShift {
+  0%: {
+    color: #FFABAB;
+  }
+  20% {
+    color: #FFDAAB;
+  }
+  40% {
+    color: #DDFFAB;
+  }
+  60% {
+    color: #ABE4FF;
+  }
+  80% {
+    color: #D9ABFF;
+  }
+  100% {
+    color: #FFABAB;
+  }
+}
